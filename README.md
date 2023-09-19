@@ -1,6 +1,6 @@
 ## Steps to Run
 
-1. [`minikube start`] [1]
+1. `minikube start`
 2. `docker build --tag [username]/hello-go .`
 3. `docker push [username]/hello-go:latest`
 4. `kubectl create deployment demo --image [username]/hello-go`
@@ -11,5 +11,7 @@
 ```
 curl -H "Connection: close" SERVICE_URL
 ```
+
+### Local Kubernetes Cluster
 
 [1] https://minikube.sigs.k8s.io/docs/start/
